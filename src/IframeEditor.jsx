@@ -1,15 +1,15 @@
 const React = novi.react.React;
 import Trigger from "./editor/Trigger";
 import Header from "./editor/Header";
-
+const Messages = novi.language.getDataByKey("novi-plugin-iframe");
 const EditorItem = {
     trigger: <Trigger/>,
-    tooltip: "Change Iframe Source",
+    tooltip: Messages.editor.tooltip,
     header: [<Header/>],
     closeIcon: "submit",
     width: 300,
     onSubmit: submitIframeSrc,
-    title: "Edit iframe source"
+    title: Messages.editor.title
 };
 
 export default EditorItem;
