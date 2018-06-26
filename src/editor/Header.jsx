@@ -20,7 +20,7 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div className="novi-link-tool">
+            <div className="novi-iframe-tool" style={{display: "flex"}}>
                 <Icon>{Icons.ICON_IFRAME}</Icon>
                 <div className="link-tool-input-warp" style={{width: 210}}>
                     <Input onChange={this._handleLinkChange} value={this.state.src}/>
